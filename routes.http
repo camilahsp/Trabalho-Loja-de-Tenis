@@ -1,0 +1,31 @@
+POST http://localhost:3333/tenis
+Content-Type: application/json
+
+{
+    "Marca": "Vans",
+    "Cor": "Rosa",
+    "nsapato": "35"
+}
+
+###
+
+GET http://localhost:3333/tenis
+
+###
+
+GET http://localhost:3333/tenis?search=Nike
+
+###
+
+PUT http://localhost:3333/Tenis/18e5696f-01ef-4c69-b9f6-e9ce88d4975b
+Content-Type: application/json
+
+{
+    "Marca": "Nike",
+    "Cor": "Azul",
+    "nsapato": "38"
+}
+
+###
+
+DELETE http://localhost:3333/Tenis/18e5696f-01ef-4c69-b9f6-e9ce88d4975b
